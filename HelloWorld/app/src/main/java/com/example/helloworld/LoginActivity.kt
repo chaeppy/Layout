@@ -1,5 +1,6 @@
 package com.example.helloworld
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -21,6 +22,7 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this,"아이디와 비밀번호를 확인하세요",Toast.LENGTH_SHORT).show()
             else{
                 startActivity(Intent(this,MainActivity::class.java))
+                finish()
             }
 
         }
@@ -28,7 +30,7 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if(requestCode == 101){
+        if(requestCode == 101 && resultCode == Activity.RESULT_OK ){
             val email = data?.getStringExtra("email")
             val pwd = data?.getStringExtra("pwd")
 
