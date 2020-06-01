@@ -70,7 +70,7 @@ et_email.text.toString 을 해야 putExtra,getStringExtra에서 제대로 받을
  :마지막에 commit을 해야 적용됨!!
  
  :코드 
- 
+ ```
   val pref = this.getPreferences("prefs",0) //0은 (Context.MODE_PRIVATE)와 같음
   
   val editor = pref.edit() 
@@ -80,18 +80,17 @@ et_email.text.toString 을 해야 putExtra,getStringExtra에서 제대로 받을
   editor.putString("pwd", pwd.toString())
   
   editor.commit()
-    
+ ```
+ 
 -데이터 로드(get)
   :저장할 때 사용했던 key 값을 이용
-  
   :로드시 해당 key에 해당되는 데이터가 없다면 default로 설정한 값이 호출
-  
   :코드
+  ```
     val prefs = getSharedPreferences("prefs",0);
-    
     et_email.setText(prefs.getString(key, "")); //""는 DEFAULT VALUE STRING
-    
+  ```
 
-참고: https://re-build.tistory.com/37 /*SharedPreferences Class 코드*/
+참고: https://re-build.tistory.com/37 *SharedPreferences Class 코드*
 
-참고: https://blog.yena.io/studynote/2017/12/18/Android-Kotlin-SharedPreferences.html /*SharedPreferences Kotlin 코드*/
+참고: https://blog.yena.io/studynote/2017/12/18/Android-Kotlin-SharedPreferences.html *SharedPreferences Kotlin 코드*
