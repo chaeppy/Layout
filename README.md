@@ -94,3 +94,14 @@ et_email.text.toString 을 해야 putExtra,getStringExtra에서 제대로 받을
 참고: https://re-build.tistory.com/37 *SharedPreferences Class 코드*
 
 참고: https://blog.yena.io/studynote/2017/12/18/Android-Kotlin-SharedPreferences.html *SharedPreferences Kotlin 코드*
+
+<div>
+![HomeActivity](https://user-images.githubusercontent.com/60434971/87799453-347df980-c888-11ea-854d-b3de9f489c53.png)
+![HomeActivity_menu1](https://user-images.githubusercontent.com/60434971/87799418-27610a80-c888-11ea-93f5-b769c5da76fc.png)
+![MatchProcActivityButtonDisabled](https://user-images.githubusercontent.com/60434971/87799497-419ae880-c888-11ea-9829-af160026c259.png)
+![MatchSucActivity](https://user-images.githubusercontent.com/60434971/87799571-5a0b0300-c888-11ea-9fd2-2bf1dcb9faa0.png)
+![CountDownActivity](https://user-images.githubusercontent.com/60434971/87799585-61321100-c888-11ea-999b-f80d4dfb9d88.png)
+![StartRunActivity](https://user-images.githubusercontent.com/60434971/87799649-760ea480-c888-11ea-9009-33b44e623178.png)
+![RunActivity – 4](https://user-images.githubusercontent.com/60434971/87799771-963e6380-c888-11ea-80a9-000f690a19ff.png)
+</div>
+
